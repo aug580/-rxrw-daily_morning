@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: checkout
-      uses: aug580/checkout@v3
+      uses: actions/checkout@v3
       with:
         ref: master
 
     - name: sender
-      uses: aug580/setup-python@v2
+      uses: actions/setup-python@v2
       with:
         python-version: '3.x'
         architecture: 'x64'
